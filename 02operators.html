@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
 
@@ -12,40 +15,75 @@
       //Arithmetic Operations
       a = 4;
       b = 3;
+      document.write("a=4;<br>b=3;<br>");
+
+      document.write("a + b=");
       document.write(a + b + "<br>");
+
+      document.write("a - b =");
       document.write(a - b + "<br>");
+
+      document.write("a * b =");
       document.write(a * b + "<br>");
+
+      document.write("a / b =");
       document.write(a / b + "<br>");
-      document.write((a % b) + "<br>");
+
+      document.write("a % b =");
+      document.write(a % b + "<br>");
+
+      document.write("++a =");
       document.write(++a + "<br>"); //pre increment
+      document.write("a++ =");
       document.write(a++ + "<br>"); //post increment
+      document.write("a =");
       document.write(a + "<br>");
+
+      document.write("--a ="); //pre decrement
       document.write(--a + "<br>"); //pre decrement
+
+      document.write("a-- =");
       document.write(a-- + "<br>"); //post decrement
+
+      document.write("a =");
       document.write(a + "<br><br>");
       //Assignment operators
-      x = 5;
+      x = 2;
       y = 4;
+      document.write("x=5;<br>y=4;<br>");
+
       x = y;
+      document.write("x =");
       document.write(x + "<br>"); //Same as x = y
+
       x += y;
+      document.write("x =");
       document.write(x + "<br>"); // Same as x = x + y
+
       x -= y;
+      document.write("x =");
       document.write(x + "<br>"); // Same as x = x - y
+
       x *= y;
+      document.write("x =");
       document.write(x + "<br>"); // Same as x = x * y
+
       x /= y;
+      document.write("x =");
       document.write(x + "<br>"); // Same as x = x / y
+
       x %= y;
+      document.write("x =");
       document.write(x + "<br>"); // Same as x = x % y
-      // x <<= y;
-      // document.write(x + "<br>");// Same as x = x << y
-      // x >>= y;
-      // document.write(x + "<br>");// Same as x = x >> y
-      // x >>>= y;
-      // document.write(x + "<br>");// Same as x = x >>> y
-      // x &= y;
-      // document.write(x + "<br>");// Same as x = x & y
+
+      x <<= y;
+      document.write(x + "<br>");// Same as x = x << y
+      x >>= y;
+      document.write(x + "<br>");// Same as x = x >> y
+      x >>>= y;
+      document.write(x + "<br>");// Same as x = x >>> y
+      x &= y;
+      document.write(x + "<br>");// Same as x = x & y
       x ^= y;
       document.write(x + "<br>"); // Same as x = x ^ y
       x |= y;
@@ -99,14 +137,15 @@
       document.write(p = 5 && p < 1);
       document.write("<br>");
 
-      document.write(p = 5 || p < 8);
+      document.write(p == 5 || p < 8);
       document.write("<br>");
 
-      document.write(p = 5 || p < 8);
+      document.write(p == 5 || p < 3);
       document.write("<br>");
 
-      document.write!(p < 8);
+      document.write(!(p < 5));
       document.write("<br>");
     </script>
   </body>
+
 </html>
