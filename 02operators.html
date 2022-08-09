@@ -28,7 +28,7 @@
 
       document.write("a % b =");
       document.write((a % b) + "<br>");
-
+      //
       document.write("++a =");
       document.write(++a + "<br>"); //pre increment
       document.write("a++ =");
@@ -45,13 +45,13 @@
       document.write("a =");
       document.write(a + "<br><br>");
       //Assignment operators
-      x = 5;
-      y = 4;
+      x = 1;
+      y = 2;
       document.write("x=5;<br>y=4;<br>");
 
-      x = y;
-      document.write("x =y =");
-      document.write(x + " Same as x = y<br>"); //Same as x = y
+      // x = y;
+      // document.write("x =y =");
+      // document.write(x + " Same as x = y<br>"); //Same as x = y
 
       x += y;
       document.write("x +=y=");
@@ -73,22 +73,6 @@
       document.write("x %= y =");
       document.write(x + " Same as x = x % y<br>"); // Same as x = x % y
 
-      x <<= y;
-      document.write("x <<= y =");
-      document.write(x + " Same as x = x << y<br>"); // Same as x = x << y
-
-      x >>= y;
-      document.write("x >>= y=");
-      document.write(x + " Same as x = x >> y<br>"); // Same as x = x >> y
-
-      x >>>= y;
-      document.write("x >>>= y =");
-      document.write(x + " Same as x = x >>> y<br>"); // Same as x = x >>> y
-
-      x &= y;
-      document.write("x &= y =");
-      document.write(x + " Same as x = x & y<br>"); // Same as x = x & y
-
       x ^= y;
       document.write("x ^= y =");
       document.write(x + " Same as x = x ^ y<br>"); // Same as x = x ^ y
@@ -102,78 +86,92 @@
       document.write(x + " Same as x = x ** y<br><br>"); // Same as x = x ** y
 
       //Comparison Operator
-      p = 5;
-      document.write("p == 2=");
-      document.write(p == 2);
+      m = 5;
+      document.write("m == 2=");
+      document.write(m == 2);
       document.write("<br>");
 
-      document.write("p == 5=");
-      document.write(p == 5);
+      document.write("m == 5=");
+      document.write(m == 5);
       document.write("<br>");
 
-      document.write('p == "5"=');
-      document.write(p == "5");
+      document.write('m == "5"=');
+      document.write(m == "5");
       document.write("<br>");
 
-      document.write('p === "5"=');
-      document.write(p === "5");
+      document.write('m === "5"=');
+      document.write(m === "5");
       document.write("<br>");
 
-      document.write("p != 5=");
-      document.write(p != 5);
+      document.write("m != 5=");
+      document.write(m != 5);
       document.write("<br>");
 
-      document.write("p != 3=");
-      document.write(p != 3);
+      document.write("m != 3=");
+      document.write(m != 3);
       document.write("<br>");
 
-      document.write("p !== 5=");
-      document.write(p !== 5);
+      document.write("m !== 5=");
+      document.write(m !== 5);
       document.write("<br>");
 
-      document.write('p !== "5"=');
-      document.write(p !== "5");
+      document.write('m !== "5"=');
+      document.write(m !== "5");
       document.write("<br>");
 
-      document.write("p !== 7=");
-      document.write(p !== 7);
+      document.write("m !== 7=");
+      document.write(m !== 7);
       document.write("<br>");
 
-      document.write("p < 8=");
-      document.write(p < 8);
+      document.write("m < 8=");
+      document.write(m < 8);
       document.write("<br>");
 
-      document.write("p > 8=");
-      document.write(p > 8);
+      document.write("m > 8=");
+      document.write(m > 8);
       document.write("<br>");
 
-      document.write("p <= 8=");
-      document.write(p <= 8);
+      document.write("m <= 8=");
+      document.write(m <= 8);
       document.write("<br>");
 
-      document.write("p >= 8=");
-      document.write(p >= 8);
+      document.write("m >= 8=");
+      document.write(m >= 8);
+      document.write("<br><br>");
+
+      //Logical Operator
+      n = 5;
+      document.write("n = 5 && n < 8=");
+      document.write((n = 5 && n < 8));
       document.write("<br>");
 
-      document.write("p = 5 && p < 8=");
-      document.write((p = 5 && p < 8));
+      document.write("n = 5 && n < 1=");
+      document.write((n = 5 && n < 1));
       document.write("<br>");
 
-      document.write("p = 5 && p < 1=");
-      document.write((p = 5 && p < 1));
+      document.write("n == 5 || n < 8=");
+      document.write(n == 5 || n < 8);
       document.write("<br>");
 
-      document.write("p == 5 || p < 8=");
-      document.write(p == 5 || p < 8);
+      document.write("n == 5 || n < 3=");
+      document.write(n == 5 || n < 3);
       document.write("<br>");
 
-      document.write("p == 5 || p < 3=");
-      document.write(p == 5 || p < 3);
+      document.write("!(n < 5)=");
+      document.write(!(n < 5));
       document.write("<br>");
 
-      document.write("!(p < 5)=");
-      document.write(!(p < 5));
-      document.write("<br>");
+      //Ternary Operator
+      var p = 10,
+        q = 5;
+
+      var r = p > q ? p : q; // value of c would be 10
+      document.write("var r = p > q? p : q=");
+      document.write(r);
+
+      var s = p < q ? p : q; // value of d would be 5
+      document.write("<br> var s = p < q? p : q=");
+      document.write(s);
     </script>
   </body>
 </html>
