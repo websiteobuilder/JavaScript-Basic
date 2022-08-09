@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+
+  <body>
+    <script>
+      //if condition
+      document.write("If condition<br>");
+      a = 4;
+      if (a < 5) {
+        document.write("a is smaller than 5<br>")
+      }
+      if (a > 5) {
+        document.write("a is not smaller than 5<br>")
+      }
+      //else condition
+      document.write("else condion<br>");
+      b = 5;
+      if (b < 4) {
+        document.write("b is smaller than 4<br>");
+      }
+      else {
+        document.write("b is not smaller than 4<br>")
+      }
+      //elseif condition
+      document.write("elseif condition<br>");
+      c = 3;
+      if (c == 1) {
+        document.write("c is equil to 1<br>");
+      } else if (c == 2) {
+        document.write("c is equil to 2<br>");
+      } else {
+        document.write("c is equil to 3<br>");
+      }
+      //Switch
+      document.write("Switch<br>");
+      var day = 2;
+      switch (day) {
+        case 1: document.write("Saterday");
+          break;
+        case 2: document.write("Sunday");
+          break;
+        case 3: document.write("Monday");
+          break;
+        default: document.write("Another day");
+      }
+      
+    </script>
+  </body>
+
 </html>
