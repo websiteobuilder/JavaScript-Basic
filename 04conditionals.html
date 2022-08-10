@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge" />
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
 
@@ -16,19 +13,18 @@
       document.write("If condition<br>");
       a = 4;
       if (a < 5) {
-        document.write("a is smaller than 5<br>")
+        document.write("a is smaller than 5<br><br>");
       }
       if (a > 5) {
-        document.write("a is not smaller than 5<br>")
+        document.write("a is not smaller than 5<br><br>");
       }
       //else condition
       document.write("else condion<br>");
       b = 5;
       if (b < 4) {
-        document.write("b is smaller than 4<br>");
-      }
-      else {
-        document.write("b is not smaller than 4<br>")
+        document.write("b is smaller than 4<br><br>");
+      } else {
+        document.write("b is not smaller than 4<br><br>");
       }
       //elseif condition
       document.write("elseif condition<br>");
@@ -41,19 +37,84 @@
         document.write("c is equil to 3<br>");
       }
       //Switch
-      document.write("Switch<br>");
+      document.write("<br>Switch<br>");
       var day = 2;
       switch (day) {
-        case 1: document.write("Saterday");
+        case 1:
+          document.write("Saterday");
           break;
-        case 2: document.write("Sunday");
+        case 2:
+          document.write("Sunday");
           break;
-        case 3: document.write("Monday");
+        case 3:
+          document.write("Monday");
           break;
-        default: document.write("Another day");
+        default:
+          document.write("Another day");
       }
-      
+      //loops
+      document.write("<br><br>Loops<br>");
+      document.write("<br>For Loop<br>");
+
+      for (let i = 1; i < 5; i++) {
+        document.write(i + "<br>");
+      }
+      document.write("<br>");
+
+      let j = 1;
+      for (let k = 0; k < 10; k++) {
+        j += k;
+        document.write(j + "<br>");
+      }
+
+      document.write("<br>");
+      let p = 1;
+      for (; p < 10; ) {
+        document.write(p + "<br>");
+        p++;
+      }
+
+      //while loop
+      document.write("<br>while Loop<br>");
+      let q = 1;
+      while (q < 10) {
+        document.write(q + "<br>");
+        q++;
+      }
+
+      //do while loop
+      document.write("<br>do while<br>");
+      let r = 1;
+      do {
+        document.write(r + "<br>");
+        r++;
+      } while (r < 10);
+
+      //break & continue
+      document.write("<br>break & continue<br>");
+      for (let x = 0; x < 10; x++) {
+        if (x == 5) {
+          break;
+        }
+        document.write(x + "<br>");
+      }
+
+      document.write("<br>");
+      for (let x = 0; x < 10; x++) {
+        if (x == 5) {
+          continue;
+        }
+        document.write(x + "<br>");
+      }
+      document.write("<br>");
+      let sum = 0;
+      for (y = 4; y < 8; y++) {
+        if (y == 6) {
+          continue;
+        }
+        sum += y;
+      }
+      document.write(sum);
     </script>
   </body>
-
 </html>
