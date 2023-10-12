@@ -1,0 +1,2 @@
+make a exam result making script.
+if it is 79 add 1 .

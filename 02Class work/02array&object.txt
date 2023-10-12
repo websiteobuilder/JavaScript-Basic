@@ -1,0 +1,1 @@
+define a array and a object and print one of there value.

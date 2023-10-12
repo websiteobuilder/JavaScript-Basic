@@ -1,0 +1,2 @@
+solve some math problem.
+1. If a=5;b=7 then squire of (a+b) and (a-b) =?
